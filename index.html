@@ -10,8 +10,8 @@
 
 <body>
     <h1>Weather Forecast</h1>
-    <div class="container">
-      <div class="left">
+    <container class="container">
+      <forms class="forms">
         <form>
           <label for="cityInput">Enter City:</label>
           <input type="text" id="cityInput" required>
@@ -19,16 +19,16 @@
         </form>
         <h2>Previously Searched Cities:</h2>
         <ul id="searchedCities"></ul>
-      </div>
-      <div class="center">
+      </forms>
+      <column class="weatherNow">
         <h2>Current Weather:</h2>
         <p id="currentWeather"></p>
-      </div>
-      <div class="bottom">
+      </column>
+      <weatherLater class="future">
         <h2>5-day Forecast:</h2>
         <div id="forecast"></div>
-      </div>
-    </div>
+      </weatherLater>
+    </container>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"></script>
   <script src="./docs/script.js"></script>
 

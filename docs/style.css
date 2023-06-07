@@ -1,61 +1,83 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  background-color: #f5f5f5;
+  margin: 50px;
   padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.left {
-  width: 30%;
-  margin-right:2%;
-  padding: 10px;
-}
-
-.left form {
-  margin-bottom: 20px;
-}
-
-.center {
-  width: 30%;
-  padding: 10px;
-  background-color: lightblue;
-}
-
-.bottom {
-  flex-wrap: wrap;
-  align-items: center;
-  width: 30%;
-  padding: 10px;
-  background-color: lightblue;
-  margin-top: 20px;
+  color: #333333;
 }
 
 h2 {
-  margin-top: 0;
+  margin-left: 30px;
+  color: #555555;
+}
+
+.forms {
+  width: 30%;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+input[type="text"] {
+  width: 20%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
+  margin-left: 20px;
+  width: 100px;
+  background-color: #b8b6b6;
   margin-bottom: 5px;
 }
 
-button {
-  margin-top: 5px;
+.weatherNow {
+  margin-left: 20px;
+  width: 40%;
+  text-align: center;
 }
 
-#forecast p {
-  margin-bottom: 5px;
+.forecast {
+  margin-left: 40px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
